@@ -26,7 +26,7 @@ int is_palindrome(listint_t **head)
 			return (0);
 		node_up = node_up->next;
 		node_down = node_up;
-		len = len - 2;
+		len = len - 2;	
 		for (i = 1; i <= len; i++)
 			node_down = node_down->next;
 	}
