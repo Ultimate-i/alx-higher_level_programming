@@ -13,7 +13,6 @@ class Rectangle():
         """Sets the necessary attributes for the Rectangle object.
 
         Args:
-
             width (int): the width of the rectangle.
             height (int): the height of the rectangle.
         """
