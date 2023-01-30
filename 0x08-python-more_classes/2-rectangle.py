@@ -28,6 +28,7 @@ class Rectangle():
 
     @width.setter
     def width(self, value):
+        
         if type(value) is int:
             if value >= 0:
                 self.__width = value
@@ -44,6 +45,7 @@ class Rectangle():
 
     @height.setter
     def height(self, value):
+        
         if type(value) is int:
             if value >= 0:
                 self.__height = value
@@ -52,14 +54,17 @@ class Rectangle():
         else:
             raise TypeError("height must be an integer")
 
+    
     def area(self):
         """Returns the current rectangle area."""
         
         return self.__width * self__height
 
+    
     def perimeter(self):
         """Returns the current rectangle perimeter."""
         
         if self.__width is 0 or self.__height is 0:
             return 0
+        
         return self.__width * 2 + self.__height * 2
