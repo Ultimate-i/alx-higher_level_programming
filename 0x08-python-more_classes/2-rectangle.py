@@ -10,14 +10,14 @@ class Rectangle():
     """Defines a rectangle."""
 
     def __init__(self, width=0, height=0):
-    """Sets the necessary attributes for the Rectangle object.
+        """Sets the necessary attributes for the Rectangle object.
 
-    Args:
-        width (int): the width of the rectangle.
-        height (int): the height of the rectangle.
-    """
-    self.width = width
-    self.height = 
+        Args:
+            width (int): the width of the rectangle.
+            height (int): the height of the rectangle.
+        """
+        self.width = width
+        self.height = 
 
     @property
     def width(self):
