@@ -61,16 +61,25 @@ class Rectangle():
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """Return the printable representation of the Rectangle.
-        
-        Represents the rectangle with the # character.
-        """
-        if self.__width == 0 or self.__height == 0:
-            return ("")
-
-            rect = []
+        """similar as my_print"""
+        msg = []
+        if self.__width > 0 and self.__height > 0:
             for i in range(self.__height):
-                [rect.append('#') for j in range(self.__width)]
-                if i != self.__height - 1:
-                    rect.append("\n")
-            return ("".join(rect))
+                for j in range(self.__width):
+                    msg.append("#")
+                if i < self.__height - 1:
+                    msg.append('\n')
+        return ''.join(msg)
+
+    def my_print(self):
+        """Print the square
+        This method uses the symbol # to graphically represent the
+        current square state.
+        """
+        if self.__width > 0 and self.__height > 0:
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    print("#", end='')
+                if i < self.__height - 1:
+                    print()
+        print()
