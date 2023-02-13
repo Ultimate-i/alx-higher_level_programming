@@ -366,5 +366,5 @@ class Test_Base_load_from_file_csv(TestCase):
             Base.load_from_file_csv(42)
 
 
-if __name__ == "__main__
+if __name__ == "__main__":
     unittest.main()
